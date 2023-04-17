@@ -1,7 +1,17 @@
 .PHONY: build
 
-start: build
+start: build _start
+
+_start:
 	docker-compose up app
+
+test: build
+	docker-compose run mamba test
+
+shell: build _shell
+
+_shell:
+	docker-compose run app sh
 
 build: launch_services
 	docker-compose build
