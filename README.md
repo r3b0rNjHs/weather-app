@@ -9,6 +9,7 @@ This project is based on Flask with a swagger that runs on a python3 docker imag
 ## Installation
 
 Inside of the root of the project, enter into the terminal: 'make start'
+
 This will run the server on http://127.0.0.1:8080
 
 ## Internal Testing
